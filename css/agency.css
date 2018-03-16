@@ -8,12 +8,28 @@ p {
 }
 
 a {
-    color: #fed136;
+    color: indianred;
 }
 
 a:hover {
-    color: #fec503;
+    color: black;
 }
+
+.praktischeInfo{
+    background-color: indianred;
+}
+
+#praktischeInfoKleur{
+    color:white;
+}
+
+#infoKleur{
+    color:indianred;
+    
+}
+
+
+
 
 .text-primary {
     color: #fed136 !important;
@@ -31,6 +47,14 @@ h6 {
 
 section {
     padding: 100px 0;
+}
+
+.subtext{
+    color: white;
+    font-size: 18px
+    padding: 2px;
+    margin: 10px;
+    
 }
 
 section h2.section-heading {
