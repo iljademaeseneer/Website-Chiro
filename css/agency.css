@@ -24,7 +24,7 @@ a:hover {
 }
 
 #infoKleur{
-    color:indianred;
+    color: indianred;
     
 }
 
@@ -604,6 +604,13 @@ header.masthead .intro-text .intro-heading {
     .timeline > li.timeline-inverted > .timeline-panel {
         padding: 0 100px 20px 20px;
     }
+}
+h6 {
+    font-style: italic;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .team-member {
