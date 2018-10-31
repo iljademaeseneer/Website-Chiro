@@ -694,12 +694,22 @@ h6 {
     margin-top: 0;
 }
 
-section#contact {
+section#inschrijving {
     background-color: indianred;
 
     background-repeat: no-repeat;
     background-position: center;
 
+}
+
+#vragen {
+    color: white;
+}
+
+section #inschrijving {
+    background-color: indianred;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 section#contact .section-heading {
