@@ -241,7 +241,7 @@ img::-moz-selection {
 header {
     text-align: center;
     color: white;
-    background-image: url("../img/groepsfoto.jpg");
+    /*background-image: url("../media/Video.mp4");*/
 
 
 
@@ -254,6 +254,7 @@ header {
     background-size: cover;
 
 }
+
 
 header.masthead .intro-text {
     padding-top: 150px;
