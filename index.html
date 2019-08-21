@@ -656,68 +656,121 @@
     </div>
     <!--einde leiding -->
 
+ <!-- Inschrijving -->
+           
+ <div class="modal fade" id="inschrijvingModal" tabindex="-1" role="dialog" aria-labelledby="inschrijvingModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="inschrijvingModalLabel">Inschrijvingformulier</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body text-left">
+                <p>Leuk dat je je wil inschrijven!<br> Om de inschrijving te vervolledigen hebben we nog een aantal gegevens nodig. Gelieve het formulier hieronder
+                    <b>CORRECT</b> in te vullen!</p>
+                    <br>
+                    <p>We rekenen op <b>DRIE</b> "uitprobeer" chiro-zondagen. 
+                    Indien je nadien nog wil deelnemen aan de werking moet het inschrijvingsgeld (&euro;60) eerst overgeschreven worden op volgend rekeningnummer:
+                     <u>BE93 7370 0657 9067</u></p>
 
+                <form method="post" data-target="#inschrijvingModal">
+                    <div class="form-group">
+                        <label class="mb-0">Voornaam<b class="text-danger">*</b></label>
+                        <input name="voornaam" class="form-control" placeholder="Voornaam">
+                                                    </div>
 
+                    <div class="form-group">
+                        <label class="mb-0">Achternaam<b class="text-danger">*</b></label>
+                        <input name="achternaam" type="text" class="form-control" placeholder="Achternaam">
+                                                    </div>
 
-    <!-- Contact -->
-    <section id="inschrijving">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase" id="vragen">Inschrijven</h2>
-                    <!--
-                    <h5 class="subtext" style="opacity: 0.5;">Druk hieronder om een inschrijving te starten!</h5-->
+                    <div class="form-group">
+                        <label class="mb-0">Geboortedatum<b class="text-danger">*</b></label>
+                        <input name="geboortedatum" type="text" class="form-control" placeholder="dd/mm/jjjj">
+                                                    </div>
 
+                    <div class="form-group">
+                        <label class="mb-0">Adres<b class="text-danger">*</b></label>
+                        <input name="adres" type="text" class="form-control" placeholder="Adres">
+                                                    </div>
+
+                    <div class="form-group">
+                        <label class="mb-0">Telefoonnummer ouder(s)<b class="text-danger">*</b></label>
+                        <input name="gsmnummerOuder" type="text" class="form-control" placeholder="Telefoonnummer">
+                        <small id="gsmnummerHelp" class="form-text text-muted">Scheiden door een komma</small>
+                                                    </div>
+
+                    <div class="form-group">
+                        <label class="mb-0">E-mailadres ouder(s)<b class="text-danger">*</b></label>
+                        <input name="emailouder" type="e-mail" class="form-control" placeholder="E-mailadres">
+                        <small id="emailHelp" class="form-text text-muted">Scheiden door een komma</small>
+                                                    </div>
+
+                    <div class="form-group">
+                        <label class="mb-0">Extra mededeling</label>
+                        <textarea name="extraMededeling" type="text" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <input id="submitInschrijving" type="submit" name="submit" class="btn btn-info" value="Inschrijven" data-toggle="modal" data-target="#inschrijvingModal">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--InschrijvingSucces-->
+            <div class="modal fade" id="InschrijvingSucces" tabindex="-1" role="dialog" aria-labelledby="SuccesModallabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SuccesModalLabel">Inschrijvingsformulier verzonden</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                </div>
+                <div class="modal-body text-left">
+                    <p><b>Bijna klaar!</b><br><br> Dit inschrijvingsformulier is verzonden naar de leiding van Chiro Sjaloom Meerbeke. Zodra je het lidgeld (<b>€60</b>) hebt overgemaakt naar ons rekeningnummer (<b>BE93 7370 0657 9067</b>), ben je volwaardig ingeschreven en verzekerd!<br><br>Tot binnenkort!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
                 </div>
             </div>
-            <!--
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <form id="contactForm" name="sentMessage" novalidate>
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <div class="form-group text-center">
-                                    <input class="form-control " id="name" type="text" placeholder="naam *" required
-                                        data-validation-required-message="Gelieve uw naam in te vullen.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" id="email" type="email" placeholder="e-mail *" required
-                                        data-validation-required-message="Gelieve uw e-mailadress in te vullen.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Telefoon nr *"
-                                        required data-validation-required-message="Gelieve uw telefoon/GSM nr inte vullen.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" id="message" placeholder="Uw bericht *" required
-                                        data-validation-required-message="Gelieve dit veld in te vullen."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            -->
+        </div>
+    </div>
+    
+    <!--InschrijvingsButton-->
+    <section class="text-center" id="inschrijving">
+        <main role="main" class="container text-center">
+            <div>
+                
 
+                <h1 class="section-heading text-uppercase" id="vragen">INSCHRIJVEN</h1>
 
+                
 
-
-            <div class="col-lg-12 text-center">
-                <button id="sendMessageButton" class="btn btn-info btn-xl text-uppercase" type="submit">Start
-                    Inschrijving</button>
-
-                <br>
-                <br>
+                <div style="margin-top:30px;">
+                    <a class="btn btn-info btn-xl text-uppercase" href="#inschrijven" data-toggle="modal" data-target="#inschrijvingModal">START INSCHRIJVING</a>
+                    
+                    <br>
+                    <br>
+                </div>
                 <h7>Indien u nog met vragen zit kan u altijd terecht bij <br>Ben Vanderveken (0471/ 62 64 09)</h7>
+
             </div>
-        </div>
-        </form>
-        </div>
-        </div>
-        </div>
+        </main>
     </section>
 
-    <!--einde Contact-->
+        
+
+<!--einde Inschrijving-->
+
+
+   
 
     <!-- Footer -->
     <footer>
