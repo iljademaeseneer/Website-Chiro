@@ -7,13 +7,37 @@ p {
     line-height: 1.75;
 }
 
-a {
-    color: indianred;
+a:link {
+    color: cornflowerblue;
 }
 
 a:hover {
-    color: black;
+    color:cornflowerblue;
 }
+
+
+
+a .btn .btn-xl .btn-primary{
+    background-color:white;
+    color:white !important;
+}
+
+a .btn .btn-success .btn-xl .text-uppercase{
+    color:white !important;
+}
+
+a .sendMessageButton {
+    color:white !important;
+}
+
+a .btn-success{
+    color:white;
+}
+
+.white {
+    color: white;
+}
+
 
 .praktischeInfo {
     background-color: indianred;
@@ -61,7 +85,8 @@ section {
 
 .subtext {
     color: white;
-    font-size: 18px padding: 2px;
+    font-size: 18px ;
+    padding: 2px;
     margin: 10px;
 
 }
@@ -90,20 +115,32 @@ section h3.section-subheading {
 .btn {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 700;
+    color:white !important;
+    
 }
 
 .btn-xl {
     font-size: 18px;
     padding: 20px 40px;
+    color:white !important;
+    
+    
+}
+
+a .btn-xl {
+    color:white !important;
 }
 
 h7 {
     color: white;
 }
 
+
+
 .btn-primary {
     background-color: #fed136;
     border-color: #fed136;
+    color:white !important;
 }
 
 .btn-primary:active,
@@ -111,7 +148,7 @@ h7 {
 .btn-primary:hover {
     background-color: #fec810 !important;
     border-color: #fec810 !important;
-    color: white;
+    color:white !important;
 }
 
 .btn-primary:active,
@@ -125,7 +162,7 @@ h7 {
 }
 
 ::selection {
-    color: indianred;
+    background-color: cornflowerblue;
     text-shadow: none;
 }
 
